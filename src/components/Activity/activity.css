@@ -1,0 +1,50 @@
+.boxes img {
+    width: 300px;
+}
+
+.boxes {
+    margin-top: 10px;
+}
+
+.icones {
+    width: 150px !important;
+    margin-bottom: 100px;
+}
+
+.box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    margin: 0 5px;
+    width: 32%;
+    align-items: center;
+    padding-top: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media(max-width:990px) {
+    .box {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media (max-width:750px) {
+    .box {
+        width: 100%;
+    }
+}
+
+.box div {
+    position: absolute;
+    top: 25px;
+    font-family: CALISTO;
+    font-size: 15px;
+    color: grey;
+    text-transform: uppercase;
+}
+
+.box img {
+    margin-top: 50px;
+}

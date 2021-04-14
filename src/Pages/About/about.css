@@ -1,0 +1,94 @@
+#about {
+    height: 100vh;
+}
+
+.grand-titre {
+    font-family: CALISTO;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+
+}
+
+.grand-titre p {
+    line-height: 6px;
+    font-size: 13px;
+    color: rgb(235, 128, 128);
+    float: left;
+    letter-spacing: 2px;
+}
+
+.grand-titre span {
+    display: inline-block;
+    letter-spacing: 5px;
+}
+
+.grand-titre h3 {
+    font-size: 12px;
+    color: grey;
+    letter-spacing: 5px;
+}
+
+.grand-titre p span {
+    background-color: rgb(235, 128, 128);
+    color: white;
+    padding: 5px 10px;
+}
+
+.first-button {
+    outline: none;
+    border: 1px solid rgb(235, 128, 128);
+    padding: 15px 0;
+    width: 200px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    transition: all .3s ease-in-out;
+    background-color: transparent;
+    margin-top: 5px;
+    margin-right: 5px;
+
+}
+
+.first-button a {
+    text-decoration: none;
+    color: black;
+}
+
+.first-button a:hover {
+    color: white;
+}
+
+.first-button:hover {
+    background-color: rgb(235, 128, 128);
+    color: white !important;
+}
+
+.travail {
+    width: 90%;
+}
+
+@media(max-width:1000px) {
+    #about {
+        margin-top: 100px;
+        margin-bottom: 10%;
+    }
+
+    .designBox {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .designBox h1 {
+        text-align: center;
+    }
+
+    .designBox h3 {
+        font-size: 60%;
+    }
+}
+
+.growth,
+.travail {
+    cursor: pointer;
+}

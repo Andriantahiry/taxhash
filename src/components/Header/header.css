@@ -1,0 +1,146 @@
+nav {
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+    position: relative;
+}
+
+.nav-item {
+    display: flex;
+    width: 500px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.links {
+    list-style: none;
+
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 15px;
+    border-top: 3px solid transparent;
+
+    transition: all .3s ease-in-out;
+}
+
+.links a:hover {
+    color: rgb(248, 104, 128);
+    border-top: 3px solid rgb(248, 104, 128);
+}
+
+li a.active {
+    color: rgb(248, 104, 128);
+
+}
+
+.humberger {
+    opacity: 1;
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+    left: 50%;
+    z-index: 200;
+}
+
+.humberger span {
+    width: 50%;
+    height: 2px;
+    background-color: #888888;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.humberger span::before {
+    content: '';
+    position: absolute;
+    background-color: #0e0b0b;
+    top: 5px;
+    height: 2px;
+    width: 100%;
+    transition: all 0.5s ease-in-out
+}
+
+.humberger span::after {
+    content: '';
+    position: absolute;
+    background-color: #100c0c;
+    height: 2px;
+    width: 100%;
+    transition: all 0.5s ease-in-out
+}
+
+.humberger.active span {
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.humberger.active span::before {
+    top: 0;
+    transform: rotateZ(220deg)
+}
+
+.humberger.active span::after {
+    top: 0;
+    transform: rotateZ(-220deg)
+}
+
+@media (max-width:1000px) {
+    .nav-item {
+        flex-flow: column;
+        position: relative;
+        height: 300px;
+        top: 50px;
+        border: 1px solid rgb(179, 179, 179);
+
+
+    }
+
+    nav.show {
+        margin-bottom: 50px;
+        transition: all .3s ease-in-out;
+    }
+
+    nav {
+        position: relative;
+    }
+
+
+
+    li {
+        width: 50%;
+        padding: 20px 25px;
+    }
+
+    .humberger {
+        right: 35px !important;
+        left: inherit;
+    }
+
+    li:hover {
+        background-color: rgb(202, 202, 202);
+        width: 50%;
+    }
+}
+
+@media (max-width:500px) {
+    .nav-item {
+        position: relative;
+        min-width: 350px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}

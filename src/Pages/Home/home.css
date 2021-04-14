@@ -1,0 +1,117 @@
+.leftbox {
+    position: relative;
+    height: 75vh;
+}
+
+.leftbox img {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: -55px;
+}
+
+.opaque1 {
+    height: 75%;
+    width: 100%;
+    top: 50px;
+    left: -55px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.213);
+}
+
+.opaque2 {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    background-color: #04040465;
+    bottom: 8%;
+}
+
+.leftbox P {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    color: white;
+    font-size: 30px;
+}
+
+@media (max-width:750px) {
+    .leftbox {
+        position: relative;
+    }
+}
+
+.rightbox {
+    font-family: CALISTO;
+    height: 70vh;
+    text-align: center;
+    padding-top: 100px;
+    position: relative;
+
+}
+
+h1 span {
+    color: rgb(247, 120, 141);
+}
+
+.btnNoir {
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(247, 120, 141);
+
+    padding: 5px 15px;
+    width: 200px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    height: 40px;
+
+}
+
+.btnNoir:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid rgb(247, 120, 141);
+}
+
+
+
+.buttons {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.downBtn {
+    width: 50px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.downBtn.pointed {
+    transform: rotateZ(180deg);
+}
+
+.activity-dash {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
+.activity-dash h1 {
+    font-size: 30px;
+    width: 300px;
+    text-align: center;
+    font-family: CALISTO;
+}

@@ -1,0 +1,63 @@
+.skill-dash {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
+.skill-dash h1 {
+    font-size: 30px;
+    width: 300px;
+    text-align: center;
+    font-family: CALISTO;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 200px;
+    margin-left: 5px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.card p {
+    position: absolute;
+    top: 5px;
+}
+
+.card img {
+    position: absolute;
+    bottom: 15px;
+}
+
+.html {
+    transform: translateY(40px);
+}
+
+
+
+.card-container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+@media(max-width:750px) {
+    .card {
+        width: 25%;
+        margin: 5px 5px;
+
+
+    }
+
+    .card-container {
+        padding: 0 !important;
+    }
+
+
+}

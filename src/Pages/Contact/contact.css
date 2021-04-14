@@ -1,0 +1,17 @@
+#contact {
+    height: 100vh;
+    margin-bottom: 100px;
+
+}
+
+#contact h1 {
+    margin: 50px 0;
+}
+
+.content:focus {
+    border: 2px solid rgb(242, 95, 120);
+}
+
+.content {
+    border: 1px solid rgb(221, 221, 221);
+}
