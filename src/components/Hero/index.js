@@ -1,9 +1,11 @@
-import React from 'react'
+import { React } from 'react'
 import landing from '../../assets/responsive.png'
 import Arrow from '../../assets/arrow.svg'
 import { motion } from 'framer-motion'
 
+
 export default function Hero({ ActivComponent, skills, setActivComponent, setSkills }) {
+
 
     const showAll = () => {
         setActivComponent(!ActivComponent);
@@ -11,10 +13,9 @@ export default function Hero({ ActivComponent, skills, setActivComponent, setSki
     }
     return (
         <motion.div
-            initial={{ scale: 0, x: '100vw' }}
-            animate={{ x: 0, scale: 1 }}
-            transition={{ type: 'spring', stiffness: 50 }}
-
+            // initial={{ scale: 0, x: '100vw' }}
+            // animate={{ x: 0, scale: 1 }}
+            // transition={{ type: 'spring', stiffness: 50 }}
 
 
             id='hero' className="container">

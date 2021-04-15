@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header';
-import { React } from "react"
+import { React, useEffect, useRef } from "react"
 import About from './Pages/About'
 import Home from './Pages/Home'
 import Contact from "./Pages/Contact"
@@ -9,13 +9,25 @@ import Portfolio from './Pages/Portfolio'
 import { AnimatePresence } from "framer-motion"
 import ErrorPage from './Pages/ErrorPage'
 import './app.css'
+
+import { gsap } from "gsap"
 function App() {
+  const appRef = useRef(null)
+
+
+  useEffect(() => {
+    gsap.from(appRef.current, {
+      duration: 2,
+      opacity: 0,
+      delay: 3
+    })
+  }, [])
 
 
   return (
     <AnimatePresence exitBeforeEnter>
 
-      <div className="App">
+      <div ref={appRef} className="App">
         <Router >
           <Header />
           <Switch>

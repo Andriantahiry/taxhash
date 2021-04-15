@@ -66,21 +66,10 @@ export default function About() {
 
                         <div className="col-md-6">
                             {travail ? <motion.img
-                                drag
-                                dragConstraints={{
-                                    top: -50,
-                                    left: -50,
-                                    right: 50,
-                                    bottom: 50,
-                                }}
+
                                 className="growth" src={growth} alt="illustration" /> : <motion.img
-                                drag
-                                dragConstraints={{
-                                    top: -50,
-                                    left: -50,
-                                    right: 50,
-                                    bottom: 50,
-                                }}
+
+
                                 className="travail" src={travImage} alt="travail" />}
                         </div>
                     </div>

@@ -4,7 +4,7 @@ import trace1 from '../../assets/trace1.png';
 import trace2 from '../../assets/trace2.png';
 import trace3 from '../../assets/trace3.png';
 import process from '../../assets/engineering.png';
-import mock2 from '../../assets/mockup.png'
+import mock2 from '../../assets/mockup.jpg'
 import start from '../../assets/start-sign.png'
 import compas from '../../assets/compass.png'
 import mock3 from '../../assets/395690.png'

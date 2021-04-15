@@ -9,8 +9,7 @@ export default function Mail() {
 
         <>
             <motion.div className="container mail"
-                drag
-                dragConstraints={{ left: -100, right: 100, bottom: -50, top: -100 }}
+                
                 whileHover={{ cursor: 'pointer' }}
             >
 

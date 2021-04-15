@@ -52,10 +52,7 @@ function Footer() {
                                         transition={{ type: 'spring', stiffness: 300 }}
                                     > <a target='blank' href='https://web.facebook.com/tahiry.hasina.56'><img width='50px' src={facebook} alt="facebook" /></a> </motion.li>
 
-                                    <motion.li
-                                        whileHover={{ scale: 1.5 }}
-                                        transition={{ type: 'spring', stiffness: 300 }}
-                                    > <a target='blank' href='https://andriantahiry.github.io/todo-react-app/'>Todo</a> </motion.li>
+
                                     <motion.li
                                         whileHover={{ scale: 1.5 }}
                                         transition={{ type: 'spring', stiffness: 300 }}

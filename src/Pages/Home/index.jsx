@@ -6,7 +6,6 @@ import Skills from '../../components/Skills';
 import Hero from '../../components/Hero';
 import Mail from '../../components/Mail';
 
-
 function Home() {
     const [ActivComponent, setActivComponent] = useState(false);
     const [skills, setSkills] = useState(false)
@@ -19,27 +18,31 @@ function Home() {
         setSkills(!skills);
         e.target.classList.toggle('pointed')
     }
+
     return (
         <>
-            <Hero ActivComponent={ActivComponent} skills={skills} setActivComponent={setActivComponent} setSkills={setSkills} />
+            <div className="hom-container">
+                <Hero ActivComponent={ActivComponent} skills={skills} setActivComponent={setActivComponent} setSkills={setSkills} />
 
-            <div onClick={showActivity} className="container btnContainer">
-                <img className="downBtn" src={downBtn} alt="buttonDown" />
-            </div>
-
-            {ActivComponent && <Activity />}
-            <br />
-            {
-                ActivComponent && (<div onClick={showSkills} className="container btnContainer">
+                <div onClick={showActivity} className="container btnContainer">
                     <img className="downBtn" src={downBtn} alt="buttonDown" />
-                </div>)
-            }
+                </div>
 
-            {
-                skills && <Skills />
-            }
+                {ActivComponent && <Activity />}
+                <br />
+                {
+                    ActivComponent && (<div onClick={showSkills} className="container btnContainer">
+                        <img className="downBtn" src={downBtn} alt="buttonDown" />
+                    </div>)
+                }
 
-            <Mail />
+                {
+                    skills && <Skills />
+                }
+
+                <Mail />
+
+            </div>
         </>
     )
 }
